@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butterfly E-Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="font-sans bg-gray-100">
+    <header class="bg-pink-200 fixed w-full top-0 z-50">
+        <nav class="container mx-auto flex items-center justify-between py-4">
+            <div class="brand">
+                <a href="/src/index.html" class="text-xl font-bold">Butterfly E-Shop</a>
+            </div>
+            <div class="menu-icon md:hidden cursor-pointer">
+                &#9776;
+            </div>
+            <ul class="nav-links hidden md:flex space-x-4" id="nav-links">
+                <li><a href="/src/underconstruction.html" class="text-gray-800 font-bold">Cart</a></li>
+                <li><a href="/src/underconstruction.html" class="text-gray-800 font-bold">About</a></li>
+                <li><a href="/src/underconstruction.html" class="text-gray-800 font-bold">Team</a></li>
+                <li><a href="/src/underconstruction.html" class="text-gray-800 font-bold">Catalogue</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mt-16 md:mt-0 py-16">
+        <section id="catalogue" class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+            <div class="product bg-white shadow-lg rounded-lg p-6">
+                <a href="t1.html" class="block">
+                    <img src="/src/assets/hakk.PNG" alt="Product 1" class="mx-auto">
+                    <h2 class="text-lg font-semibold mt-4">Product 1</h2>
+                    <p class="text-pink-600 font-bold mt-2">$10.00</p>
+                </a>
+            </div>
+            <div class="product bg-white shadow-lg rounded-lg p-6">
+                <a href="t2.html" class="block">
+                    <img src="/src/assets/koduvarblane.PNG" alt="Product 2" class="mx-auto">
+                    <h2 class="text-lg font-semibold mt-4">Product 2</h2>
+                    <p class="text-pink-600 font-bold mt-2">$10.00</p>
+                </a>
+            </div>
+            <div class="product bg-white shadow-lg rounded-lg p-6">
+                <a href="t2.html" class="block">
+                    <img src="/src/assets/koduvarblane.PNG" alt="Product 2" class="mx-auto">
+                    <h2 class="text-lg font-semibold mt-4">Product 2</h2>
+                    <p class="text-pink-600 font-bold mt-2">$10.00</p>
+                </a>
+            </div>
+            <div class="product bg-white shadow-lg rounded-lg p-6">
+                <a href="t3.html" class="block">
+                    <img src="/src/assets/leevikesed.PNG" alt="Product 2" class="mx-auto">
+                    <h2 class="text-lg font-semibold mt-4">Product 2</h2>
+                    <p class="text-pink-600 font-bold mt-2">$10.00</p>
+                </a>
+            </div>
+            <div class="product bg-white shadow-lg rounded-lg p-6">
+                <a href="t4.html" class="block">
+                    <img src="/src/assets/pohjatihane.PNG" alt="Product 2" class="mx-auto">
+                    <h2 class="text-lg font-semibold mt-4">Product 2</h2>
+                    <p class="text-pink-600 font-bold mt-2">$10.00</p>
+                </a>
+            </div>
+            <div class="product bg-white shadow-lg rounded-lg p-6">
+                <a href="t5.html" class="block">
+                    <img src="/src/assets/puukoristaja.PNG" alt="Product 2" class="mx-auto">
+                    <h2 class="text-lg font-semibold mt-4">Product 2</h2>
+                    <p class="text-pink-600 font-bold mt-2">$10.00</p>
+                </a>
+            </div>
+            <div class="product bg-white shadow-lg rounded-lg p-6">
+                <a href="t6.html" class="block">
+                    <img src="/src/assets/rasvatihane.PNG" alt="Product 2" class="mx-auto">
+                    <h2 class="text-lg font-semibold mt-4">Product 2</h2>
+                    <p class="text-pink-600 font-bold mt-2">$10.00</p>
+                </a>
+            </div>
+            <div class="product bg-white shadow-lg rounded-lg p-6">
+                <a href="t7.html" class="block">
+                    <img src="/src/assets/siisike.PNG" alt="Product 2" class="mx-auto">
+                    <h2 class="text-lg font-semibold mt-4">Product 2</h2>
+                    <p class="text-pink-600 font-bold mt-2">$10.00</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            var navLinks = document.querySelector('.nav-links');
+            if (navLinks.classList.contains('hidden')) {
+                navLinks.classList.remove('hidden');
+            } else {
+                navLinks.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>

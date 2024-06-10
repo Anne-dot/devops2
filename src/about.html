@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Butterfly E-Shop</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <div class="brand">
+          <a href="#">Butterfly E-Shop</a>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+          &#9776;
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#cart">Cart</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#catalogue">Catalogue</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+        <h1>Under Construction</h1>
+    </section>
+  </main>
+  <script>
+    document.getElementById('menu-icon').addEventListener('click', function() {
+      var navLinks = document.getElementById('nav-links');
+      if (navLinks.style.display === 'flex') {
+        navLinks.style.display = 'none';
+      } else {
+        navLinks.style.display = 'flex';
+      }
+    });
+  </script>
+</body>
+</html>
